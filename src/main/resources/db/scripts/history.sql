@@ -1,5 +1,6 @@
 --liquibase formatted sql
 
+--changeset ks:history_added
 CREATE TABLE history (
     id BIGSERIAL PRIMARY KEY,
     phone_id BIGINT NOT NULL REFERENCES phones,

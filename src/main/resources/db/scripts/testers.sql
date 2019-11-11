@@ -1,5 +1,6 @@
 --liquibase formatted sql
 
+--changeset ks:testers_added
 CREATE TABLE testers (
     id BIGSERIAL PRIMARY KEY,
     first_name VARCHAR(30),

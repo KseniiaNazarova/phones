@@ -4,8 +4,8 @@
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <!-- structure -->
-    <include file="db/scripts/testers.sql"/>
-    <include file="db/scripts/phones.sql"/>
-    <include file="db/scripts/history.sql"/>
+    <include file="/db/scripts/testers.sql"/>
+    <include file="/db/scripts/phones.sql"/>
+    <include file="/db/scripts/history.sql"/>
 
 </databaseChangeLog>

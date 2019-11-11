@@ -1,5 +1,6 @@
 --liquibase formatted sql
 
+--changeset ks:phones_added
 CREATE TABLE phones (
     id BIGSERIAL PRIMARY KEY,
     brand VARCHAR(30) NOT NULL,

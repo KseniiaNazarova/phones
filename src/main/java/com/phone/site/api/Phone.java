@@ -123,4 +123,30 @@ public class Phone
                 ", techDetails=" + techDetails +
                 '}';
     }
+
+
+    @Override
+    public boolean equals(final Object o)
+    {
+        if (this == o)
+        {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass())
+        {
+            return false;
+        }
+        final Phone phone = (Phone) o;
+        return Objects.equals(id, phone.id) &&
+                Objects.equals(model, phone.model) &&
+                Objects.equals(isAvailable, phone.isAvailable) &&
+                Objects.equals(techDetails, phone.techDetails);
+    }
+
+
+    @Override
+    public int hashCode()
+    {
+        return Objects.hash(id, model, isAvailable, techDetails);
+    }
 }
